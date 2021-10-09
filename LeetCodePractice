@@ -1,0 +1,27 @@
+18点12分 2021年10月9日
+https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/727/
+
+in place Algorithm
+https://zh.wikipedia.org/wiki/%E5%8E%9F%E5%9C%B0%E7%AE%97%E6%B3%95
+在计算机科学中，一个原地算法（in-place algorithm，也称“就地算法”）是基本上不需要借助额外的数据结构就能对输入的数据进行变换的算法。不过，分配少量空间给部分辅助变量是被允许的。
+算法执行过程中，输入的数据往往会被输出结果覆盖。原地算法只能通过替换或交换元素的方式来修改原始的输入。不满足“原地”原则的算法也被称为非原地（not-in-place）算法或异地（out-of-place）算法。
+
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        //nums=[0,0,1,1,1,2,2,3,3,4]
+        //nums=[0,1,2,3,4,2,2,3,3,4]
+        int n =nums.size();
+        if(n==0||n==1) return n;
+        
+        int count=1;
+        for(int i=1; i<n; i++)
+        {
+            if(nums[i]!=nums[count-1]){
+                nums[count]=nums[i];
+                count++;
+            }
+        }
+        return count;
+    }
+};
