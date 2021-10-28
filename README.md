@@ -1,4 +1,5 @@
 # -DiaryOfCode
-Codes for practicing python
 
-坚守日记
+Codes for practicing C++ and python
+
+坚守日记 Working Report
