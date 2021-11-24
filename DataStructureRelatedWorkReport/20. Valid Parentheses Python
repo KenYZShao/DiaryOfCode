@@ -1,0 +1,19 @@
+class Solution:
+     def isValid(self, s: str)->bool:
+        if len(s)==1:
+            return False
+        parens_l=['(','{','[']
+        parens_r=[')','}',']']
+        string=list(s)
+        stack=[]
+        for c in string:
+            if c in parens_l:
+                stack.append(c)
+            elif c in parens_r:
+                if len(stack)==0:
+                    return False
+                if parens_l[parens_r.index(c)]!=stack[-1]:
+                    return False
+                else:
+                    stack.pop()
+        return len(stack)==0
