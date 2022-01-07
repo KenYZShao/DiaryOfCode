@@ -1,4 +1,4 @@
-# -DiaryOfCode
+# -theDiaryOfCode
 
 This repository contains
 
