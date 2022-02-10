@@ -216,7 +216,7 @@ public:
         q = NULL;
     }
 
-};
+};#
 
 int main()
 {
