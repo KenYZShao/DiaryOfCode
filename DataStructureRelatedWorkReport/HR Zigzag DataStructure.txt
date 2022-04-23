@@ -1,0 +1,54 @@
+1 2 3 4 5 6 7
+
+1 2 3 7 5 6 4
+
+5 6
+
+1 2 3 4 5 6
+
+5/2=2.5=2
+6/2=3
+
+1 2 3 4 5 6 7 8 9 10 11
+
+1 2 3 4 5 11 7 8 9 10 6
+
+1 2 3 4 5 11 7 8 9 10 6
+
+for example
+
+1 2 3 4 5 6 7 8 9 10 11
+
+it should be
+
+1 2 3 4 5 6 increasing part 1
+11 10 9 8 7 decreasing for part 2
+
+1 2 3 4 5 6 11 10 9 8 7
+
+
+def findZigZagSequence(a, n):
+    a.sort()
+    mid = int(n/2)
+    a[mid], a[n-1] = a[n-1], a[mid]
+
+    st = mid + 1
+    ed = n - 2
+    while(st <= ed):
+        a[st], a[ed] = a[ed], a[st]
+        st = st + 1
+        ed = ed - 1
+
+    for i in range (n):
+        if i == n-1:
+            print(a[i])
+        else:
+            print(a[i], end = ' ')
+    return
+
+test_cases = int(input())
+for cs in range (test_cases):
+    n = int(input())
+    a = list(map(int, input().split()))
+    findZigZagSequence(a, n)
+
