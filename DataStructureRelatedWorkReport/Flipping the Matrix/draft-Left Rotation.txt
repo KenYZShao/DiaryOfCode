@@ -1,0 +1,29 @@
+1 2 3 4 5
+
+5 | 1 2 3 4 d=4
+
+5th - end(self) | begin - 4th
+
+d+1 to end | begin to d
+
+2 3 4 5 | 1 d=1
+
+
+3 4 5 | 1 2 d=2
+
+**************
+starts 0
+
+arr[d] d+1
+
+d+1 to end | begin to d
+
+arr[d] to arr[end] | arr[0] to arr[d-1]
+
+
+arr[d:] | arr[:d-1]
+
+
+
+
+
