@@ -1,0 +1,11 @@
+clendar date submiton 
+we want to display number of guest
+password reset 
+registration 
+login
+
+logout page <center> done
+
+icon 改成 png
+
+<link rel="shortcut icon" href="resources/images/easkey_icon.jpg" type="image/x-icon" />
