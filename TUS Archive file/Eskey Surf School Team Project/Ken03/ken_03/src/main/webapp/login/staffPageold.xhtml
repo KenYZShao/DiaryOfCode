@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="ISO-8859-1" content="" />
+<title>Staff Home Page</title>
+
+<meta charset="UTF-8" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Inconsolata" />
+<style type="">
+body, html {
+	height: 100%;
+	font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+	background-position: center;
+	background-size: cover;
+	background-image:
+		url("https://cdn2.picryl.com/photo/2016/06/16/mahia-ocean-waves-unsplash-010819-1024.jpg");
+	min-height: 75%;
+}
+
+.bookings {
+	display: none;
+}
+</style>
+</head>
+<body>
+	<!-- Links (sit on top) -->
+	<div class="w3-top">
+		<div class="w3-row w3-padding w3-black">
+			<div class="w3-col s3">
+				<a href="#" class="w3-button w3-block w3-black">HOME</a>
+			</div>
+
+			<div class="w3-col s3">
+				<a href="#bookings" class="w3-button w3-block w3-black" onclick="openBookings(event, 'Surf');">Surf</a>
+			</div>
+
+			<div class="w3-col s3">
+				<a href="#bookings" class="w3-button w3-block w3-black" onclick="openBookings(event, 'Stay');">Stay</a>
+			</div>
+
+			<div class="w3-col s3">
+				<a href="#checkinout" class="w3-button w3-block w3-black">Check in/out</a>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Header with image -->
+	<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+
+		<div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+			<span class="w3-tag">Open from 9am to 5pm</span>
+		</div>
+	
+		<div class="w3-display-middle w3-center">
+			<span class="w3-text-white" style="font-size: 90px;">Easkey	Surf School<br />Staff Site </span>
+		</div>
+	
+		<div class="w3-display-bottomright w3-center w3-padding-large">
+			<span class="w3-text-white">Surfers Road, Easkey, Co. Sligo</span>
+		</div>
+	</header>
+	
+	<!-- Add a background color and large text to the whole page -->
+	<div class="w3-sand w3-grayscale w3-large">
+
+
+		<!-- About Container -->
+		<div class="w3-container" id="about">
+			<div class="w3-content" style="max-width: 700px;">
+				<h5 class="w3-center w3-padding-64">
+					<span class="w3-tag w3-wide">About The Staff Portal</span>
+				</h5>
+
+				<p>This page is for staff of Easkey surf school. It allows staff
+					to manage books for surf lessons and accommodation.</p>
+				<p>In addition, it allows staff to check in and check out guests
+					as they arrive onsite.</p>
+				<p>Staff will have access to all areas of the system, and will
+					be permitted to change bills, orders, totals, and charges.</p>
+				<p>We want our guests to have the best time with us and we
+					believe that the process is down to our highly trained and
+					supported staff members.</p>
+				<p>We prioritise safety, so each month we take two days to do
+					staff training, on topics like CPR, water saftey, etc.</p>
+				<p>If you need any support, please let me know, Hank Flavin.</p>
+			</div>
+
+			<p>
+				<strong />
+			</p>
+			<center>
+				<strong>Opening hours:</strong> From April - October Tuesday -
+				Sunday from 9am to 5pm.
+				<p />
+
+				<p>
+					<strong />
+				</p>
+				<center>
+					<strong>Staff Training days:</strong> On the 22nd -23rd of each
+					month from 11am to 5pm.
+					<p />
+
+					<p>
+						<strong />
+					</p>
+					<center>
+						<strong>Address:</strong> Surfers Road, Easkey, Co. Sligo.
+						<p />
+					</center>
+				</center>
+			</center>
+		</div>
+	</div>
+	
+	
+	<!-- Bookings Container -->
+	<div class="w3-container" id="bookings">
+		<div class="w3-content" style="max-width: 700px;">
+
+			<h5 class="w3-center w3-padding-48">
+				<span class="w3-tag w3-wide">Upcoming Bookings</span>
+			</h5>
+
+			<div class="w3-row w3-center w3-card w3-padding">
+				<a href="javascript:void(0)" onclick="openBookings(event, 'Surf');" id="myLink">
+					<div class="w3-col s6 tablink">Surf</div>
+				</a>
+				<a href="javascript:void(0)" onclick="openBookings(event, 'Stay');">
+					<div class="w3-col s6 tablink">Stay</div>
+				</a>
+			</div>
+
+			<div id="Surf" class="w3-container bookings w3-padding-48 w3-card">
+
+				<h5>Novice Lessons</h5>
+
+				<p class="w3-text-grey">Six students to one teacher: 2 hour
+					sessions.</p>
+				<br />
+
+
+				<h5>Intermediate</h5>
+
+				<p class="w3-text-grey">Three students to one teacher: 3 hour
+					sessions.</p>
+				<br />
+
+
+				<h5>Advanced</h5>
+
+				<p class="w3-text-grey">Individual student teacher sessions.</p>
+				<br />
+			</div>
+
+			<div id="Stay" class="w3-container bookings w3-padding-48 w3-card">
+
+				<h5>Single</h5>
+
+				<p class="w3-text-grey">Single person occupancy rooms.</p>
+				<br />
+
+
+				<h5>Double</h5>
+
+				<p class="w3-text-grey">Suitable for a couple or two single
+					beds.</p>
+				<br />
+
+
+				<h5>Family</h5>
+
+				<p class="w3-text-grey">Family rooms designed for 2 adults and
+					up to 4 children.</p>
+				<br />
+
+
+				<h5>Mulit</h5>
+
+				<p class="w3-text-grey">Multiple-occupancy room</p>
+				<br />
+			</div>
+			<img src="/resources/images/surfing-2.png"
+				style="width: 100%; max-width: 1000px; margin-top: 32px;" alt="" />
+		</div>
+	</div>
+	<!-- Check in/ Check out -->
+	<div class="w3-container" id="checkinout">
+
+		<div class="w3-content" style="max-width: 700px;">
+
+
+			<h5 class="w3-center w3-padding-48">
+				<span class="w3-tag w3-wide">Check in/ Check out</span>
+			</h5>
+
+			<p>Check in/ Check out Guests as they arrive and leave.</p>
+
+			<p>
+				<span class="w3-tag">Totals and changes below:</span>
+			</p>
+			<p>
+				<strong>Guest</strong> input guest data.
+			</p>
+			<form action="/action_page.php" target="_blank">
+
+				<p>
+					<input class="w3-input w3-padding-16 w3-border" type="text"
+						placeholder="Name" required="" name="Name" />
+				</p>
+
+				<p>
+					<input class="w3-input w3-padding-16 w3-border" type="text"
+						placeholder="Total number of Surf Lesons" required=""
+						name="Total number of Surf Lesons" />
+				</p>
+
+				<p>
+					<input class="w3-input w3-padding-16 w3-border" type="text"
+						placeholder="Room Type: Family, Double, single, multi" required=""
+						name="Room Type: Family, Double, Single, Multiple-occupancy room" />
+				</p>
+
+				<p>
+					<input class="w3-input w3-padding-16 w3-border"
+						type="datetime-local" placeholder="Check in - Date and time"
+						required="" name="date" value="2022-11-16T20:00" />
+				</p>
+
+				<p>
+					<input class="w3-input w3-padding-16 w3-border"
+						type="datetime-local" placeholder="Check out - Date and time"
+						required="" name="date" value="2022-11-16T20:00" />
+				</p>
+
+				<p>
+					<input class="w3-input w3-padding-16 w3-border" type="text"
+						placeholder="Outline any special requests or requirements"
+						required="" name="Message" />
+				</p>
+
+				<p>
+					<input class="w3-input w3-padding-16 w3-border" type="text"
+						placeholder="Total" required="" name="Total"
+						value="Total including Taxes &amp; charges" />
+				</p>
+
+				<p>
+					<input class="w3-input w3-padding-16 w3-border" type="text"
+						placeholder="Any discounts" required="" name="Apply discount" />
+				</p>
+
+				<p>
+					<button class="w3-button w3-black" type="submit">SUBMIT</button>
+				</p>
+			</form>
+		</div>
+	</div>
+	<!-- Help Desk Container -->
+	<div class="w3-container" id="Help Desk" style="padding-bottom: 32px;">
+
+		<div class="w3-content" style="max-width: 700px;">
+
+			<h5 class="w3-center w3-padding-48">
+				<span class="w3-tag w3-wide">If you have an issue log it here</span>
+			</h5>
+			<img src="/resources/images/Easkey-Logo.png" class="w3-image"
+				style="width: 100%;" alt="" />
+
+			<p>
+				<span class="w3-tag">Note:</span> We want to support all our staff
+				to offer an excellent service.
+			</p>
+
+			<p>
+				<strong>Raise an issue</strong> any updates needed to books,
+				equiptment, etc.
+			</p>
+			<form action="/action_page.php" target="_blank">
+
+				<p>
+					<input class="w3-input w3-padding-16 w3-border" type="text"
+						placeholder="Name" required="" name="Name" />
+				</p>
+
+				<p>
+					<input class="w3-input w3-padding-16 w3-border" type="issue"
+						placeholder="What issue do you wish to report?" required=""
+						name="issues" />
+				</p>
+
+				<p>
+					<input class="w3-input w3-padding-16 w3-border"
+						type="datetime-local" placeholder="Date and time" required=""
+						name="date" value="2022-11-16T20:00" />
+				</p>
+
+				<p>
+					<input class="w3-input w3-padding-16 w3-border" type="text"
+						placeholder="Outline issue here... IT\ equiptment \ requirements"
+						required="" name="Message" />
+				</p>
+
+				<p>
+					<button class="w3-button w3-black" type="submit">SEND
+						MESSAGE</button>
+				</p>
+			</form>
+		</div>
+	</div>
+	<!-- End page content -->
+	<!-- Footer -->
+	<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+	<a href="#home" class="w3-button w3-light-grey"><i
+		class="fa fa-arrow-up w3-margin-right" />To the top</a>
+
+	<div class="w3-xlarge w3-section">
+		<i class="fa fa-facebook-official w3-hover-opacity" /> <i
+			class="fa fa-instagram w3-hover-opacity" /> <i
+			class="fa fa-snapchat w3-hover-opacity" /> <i
+			class="fa fa-pinterest-p w3-hover-opacity" /> <i
+			class="fa fa-twitter w3-hover-opacity" /> <i
+			class="fa fa-linkedin w3-hover-opacity" />
+
+		<p class="w3-small">This website was made by Fantastic 5++!</p>
+		<!-- Footer end. -->
+	</div>
+	</footer>
+	<script src="login.js"></script>
+</body>
+</html>

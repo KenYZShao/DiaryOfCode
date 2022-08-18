@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Login Page</title>
+</h:head>
+<body>
+	<h:form>
+		<p:messages />
+		<p:outputLabel value="Username: " />
+		<p:inputText value="#{loginBean.userName}" />
+		<p:outputLabel value="Password: " />
+		<p:password value="#{loginBean.password}" />
+		<p:commandButton value="Login" action="#{loginBean.validateUserLogin}"
+			ajax="false" />
+		<p>
+			<a href="ResetPassword.xhtml">Click here to Reset Password</a>
+		</p>
+		<p>
+			<a href="registration.xhtml">Not yet registered? Register now.</a>
+		</p>
+
+	</h:form>
+</body>
+</html>
