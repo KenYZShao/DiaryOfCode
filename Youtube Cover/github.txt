@@ -1,0 +1,8 @@
+a=print("Enter a number")
+int fac=1
+for(i=1;i<=a;i++){
+fac=fac*i
+}
+return fac
+
+by file
