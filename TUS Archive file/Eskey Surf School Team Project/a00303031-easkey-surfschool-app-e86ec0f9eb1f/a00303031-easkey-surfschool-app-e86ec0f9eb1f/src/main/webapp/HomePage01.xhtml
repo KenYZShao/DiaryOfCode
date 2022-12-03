@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<link rel="icon" href="/resources/favicon/favicon-32x32.png" sizes="32x32" type="image/x-icon" />
+	<link rel="mask-icon" href="/resources/favicon/safari-pinned-tab.svg" color="#5bbad5"/>
+	<meta name="msapplication-TileColor" content="#da532c"/>
+	<meta name="theme-color" content="#ffffff"/>	
+	<title>Home Page</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Inconsolata" />
+	<style type="text/css">
+body, html {
+	height: 100%;
+	font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+	background-position: center;
+	background-size: cover;
+	background-image:
+		url("https://cdn2.picryl.com/photo/2016/06/16/mahia-ocean-waves-unsplash-010819-1024.jpg");
+	min-height: 75%;
+}
+
+.menu {
+	display: none;
+}
+</style>
+
+</h:head>
+<body>
+
+	<div class="w3-top">
+
+		<div class="w3-bar" id="myNavbar">
+			<a
+				class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+				href="javascript:void(0);" onclick="toggleFunction()"
+				title="Toggle Navigation Menu"> <i class="fa fa-bars" /></a> <a
+				href="#home" class="w3-bar-item w3-button">Home</a> <a href="#about"
+				class="w3-bar-item w3-button w3-hide-small"><i
+				class="fa fa-user" /> About</a> <a href="SurfLessons"
+				class="w3-bar-item w3-button w3-hide-small"><i
+				class="fa fa-user" /> Surf Lessons</a> <a href="#accommodation"
+				class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th" />Accommodation</a>
+			<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i
+				class="fa fa-envelope" /> Contact</a>
+
+
+			<div class="topnav-right">
+				<a href="#"
+					class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-blue">
+					<i class="fa fa-search" />
+				</a> <a href="Login.html"
+					class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-bluw"><i
+					class="fa fa-user" /> Register/Login</a>
+			</div>
+
+		</div>
+	</div>
+	<!-- First Parallax Image with Logo Text -->
+
+	<div class="bgimg w3-display-container w3-opacity-min" id="home">
+
+		<div class="w3-display-middle" style="white-space: nowrap;">
+			<span
+				class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Easkey
+				<span class="w3-hide-small">Surf School</span>
+			</span>
+		</div>
+	</div>
+	<!-- Container (About Section) -->
+
+	<div class="w3-content w3-container w3-padding-64" id="about">
+
+		<h3 class="w3-center">ABOUT OUR PROGRAMME</h3>
+
+		<p class="w3-center">
+			<em>Were we meet the waves! </em>
+		</p>
+
+		<p>Hank Flavin is a former USA junior surf champion. Following a
+			visit to Ireland in 2015 Hank fell for the waves of the coast of
+			Sligo. Hank returned to Ireland in 2016 where he established the
+			Easkey Surf School. Easkey Surf School has expanded significantly in
+			recent years. While the school caters for all grades of surfers, it
+			is Hanks significant experience as a championship surfer which is
+			attracting students.Hank has been quoted as saying “The increased
+			interest in surfing in Ireland, coupled with an unbelievable coast
+			line provides huge commercial opportunities along the Atlantic Way.”</p>
+
+		<div class="w3-row">
+
+			<div class="w3-col m6 w3-center w3-padding-large">
+
+				<br /> <img src="resources/images/SunsetSurf.JPG"
+					class="w3-round w3-image w3-opacity w3-hover-opacity-off"
+					alt="Photo of Me" width="500" height="333" />
+			</div>
+			<!-- Hide this text on small devices -->
+
+			<div class="w3-col m6 w3-hide-small w3-padding-large">
+
+				<p>In the early years Hank was a one man operation, running the
+					hostel and providing the surf lessons. As the business expanded
+					Hank employed additional staff both for the provision of lessons
+					and providing accommodation. Hank’s experience has a championship
+					surf instructor has become well known. Following the 2015 summer
+					season Hank has decided to redesign the surf school offerings.
+					Students have the option of purchasing a “Surf and Stay” package
+					which entitles the student to a 15% discount on surf lessons. The
+					daily package is available to all surfer levels.</p>
+			</div>
+		</div>
+
+		<p class="w3-large w3-center w3-padding-16">We propose to offer
+			the following surf packages:</p>
+
+		<p class="w3-wide">
+			<i class="fa fa-camera" />Novice
+		</p>
+
+		<div class="w3-light-grey">
+
+			<div class="w3-container w3-padding-small w3-dark-grey w3-center"
+				style="width: 90%;"><a href="booking/availableNoviceSlots.xhtml">6 students to 1 teacher, 2 hour sessions</a></div>
+		</div>
+
+		<p class="w3-wide">
+			<i class="fa fa-laptop" />Intermediate
+		</p>
+
+		<div class="w3-light-grey">
+
+			<div class="w3-container w3-padding-small w3-dark-grey w3-center"
+				style="width: 85%;"><a href="booking/availableIntermediateSlots.xhtml">3 students to 1 teacher, 3 hour sessions</a></div>
+		</div>
+
+		<p class="w3-wide">
+			<i class="fa fa-photo" />Advanced
+		</p>
+
+		<div class="w3-light-grey">
+
+			<div class="w3-container w3-padding-small w3-dark-grey w3-center"
+				style="width: 75%;"><a href="booking/availableAdvancedSlots.xhtml">Individual student teacher sessions</a></div>
+		</div>
+
+		<p class="w3-wide">
+			<i class="fa fa-phone" />Daily package
+		</p>
+
+		<div class="w3-light-grey">
+
+			<div class="w3-container w3-padding-small w3-dark-grey w3-center"
+				style="width: 65%;">Including overnight accommodation</div>
+		</div>
+
+
+		<p class="w3-large w3-center w3-padding-16"> We offer the following accommodation packages:</p>
+
+		<p> All our accommodation options start at 50 euro per-person per-night and include breakfast.</p>
+		<p class="w3-wide">
+			<i class="fa fa-camera" />Single
+		</p>
+
+		<div class="w3-light-grey">
+
+			<div class="w3-container w3-padding-small w3-dark-grey w3-center"
+				style="width: 60%;"> Single person occupancy rooms. </div>
+		</div>
+
+		<p class="w3-wide">
+			<i class="fa fa-laptop" />Double
+		</p>
+
+		<div class="w3-light-grey">
+
+			<div class="w3-container w3-padding-small w3-dark-grey w3-center"
+				style="width: 75%;">3 students to 1 teacher, 3 hour sessions</div>
+		</div>
+
+		<p class="w3-wide">
+			<i class="fa fa-photo" />Family
+		</p>
+
+		<div class="w3-light-grey">
+
+			<div class="w3-container w3-padding-small w3-dark-grey w3-center"
+				style="width: 85%;">Individual student teacher sessions</div>
+		</div>
+
+		<p class="w3-wide">
+			<i class="fa fa-phone" />Daily package
+		</p>
+
+		<div class="w3-light-grey">
+
+			<div class="w3-container w3-padding-small w3-dark-grey w3-center"
+				style="width: 95%;">Including overnight accommodation</div>
+		</div>
+		
+	</div>	
+
+	<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+
+		<div class="w3-quarter w3-section">
+			<span class="w3-xlarge">17+</span><br /> Partners
+		</div>
+
+		<div class="w3-quarter w3-section">
+			<span class="w3-xlarge">25+</span><br /> Instructors
+		</div>
+
+		<div class="w3-quarter w3-section">
+			<span class="w3-xlarge">88+</span><br /> Accommodation Rooms
+		</div>
+
+		<div class="w3-quarter w3-section">
+			<span class="w3-xlarge">355+</span><br /> Historical Students
+		</div>
+	</div>
+	<!-- Second Parallax Image with Portfolio Text -->
+
+	<div class="bgimg w3-display-container w3-opacity-min">
+
+		<div class="w3-display-middle">
+			<span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+		</div>
+	</div>
+	<!-- Container (Portfolio Section) -->
+
+	<div class="w3-content w3-container w3-padding-64" id="portfolio">
+
+		<h3 class="w3-center">OUR WORK</h3>
+
+		<p class="w3-center">
+			<em>Here are some of my latest surfing programmes and
+				accommodation.<br /> Click on the images to make them bigger
+			</em>
+		</p>
+		<br />
+		<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+
+		<div class="w3-row-padding w3-center">
+
+			<div class="w3-col m3">
+				<img src="resources/images/p8.JPG" class="w3-hover-opacity"
+					onclick="onClick(this)" style="width: 100%;" alt="" />
+			</div>
+
+			<div class="w3-col m3">
+				<img src="resources/images/p9.JPG" class="w3-hover-opacity"
+					onclick="onClick(this)" style="width: 100%;" alt="" />
+			</div>
+
+			<div class="w3-col m3">
+				<img src="resources/images/p33.JPG" style="width: 100%;"
+					onclick="onClick(this)" class="w3-hover-opacity"
+					alt="Ready to attend the class" />
+			</div>
+
+			<div class="w3-col m3">
+				<img src="resources/images/p7.JPG" style="width: 100%;"
+					onclick="onClick(this)" class="w3-hover-opacity"
+					alt="Surfing in Winter" />
+			</div>
+		</div>
+
+		<div class="w3-row-padding w3-center w3-section">
+
+			<div class="w3-col m3">
+				<img src="resources/images/p10.JPG" style="width: 100%;"
+					onclick="onClick(this)" class="w3-hover-opacity"
+					alt="Warming up on the strand" />
+			</div>
+
+			<div class="w3-col m3">
+				<img src="resources/images/p12.JPG" style="width: 100%;"
+					onclick="onClick(this)" class="w3-hover-opacity"
+					alt="My beloved Sunset surfing" />
+			</div>
+
+			<div class="w3-col m3">
+				<img src="resources/images/p20.JPG" style="width: 100%;"
+					onclick="onClick(this)" class="w3-hover-opacity"
+					alt="Beautiful Sunset Beach" />
+			</div>
+
+			<div class="w3-col m3">
+				<img src="resources/images/p17.JPG" style="width: 100%;"
+					onclick="onClick(this)" class="w3-hover-opacity"
+					alt="Sea View Accommodation" />
+			</div>
+		</div>
+	</div>
+	<!-- Modal for full size images on click-->
+
+	<div id="modal01" class="w3-modal w3-black"
+		onclick="this.style.display='none'">
+		<span class="w3-button w3-large w3-black w3-display-topright"
+			title="Close Modal Image"><i class="fa fa-remove" /></span>
+
+		<div
+			class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+			<img id="img01" class="w3-image" alt="" />
+
+			<p id="caption" class="w3-opacity w3-large" />
+		</div>
+	</div>
+	<!-- Third Parallax Image with Portfolio Text -->
+
+	<div class="bgimg w3-display-container w3-opacity-min">
+
+		<div class="w3-display-middle">
+			<span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+		</div>
+	</div>
+	<!-- Container (Contact Section) -->
+
+	<div class="w3-content w3-container w3-padding-64" id="contact">
+
+		<h3 class="w3-center">WHERE I WORK</h3>
+
+		<p class="w3-center">
+			<em>If you are interested, never hesitate to messaging us!</em>
+		</p>
+
+		<div class="w3-row w3-padding-32 w3-section">
+
+			<div class="w3-col m4 w3-container">
+				<img src="resources/images/athlone.jpg" class="w3-image w3-round"
+					style="width: 100%;" alt="" />
+			</div>
+
+			<div class="w3-col m8 w3-panel">
+
+				<div class="w3-large w3-margin-bottom">
+					<i
+						class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right" />
+					Athlone, Ireland<br /> <i
+						class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right" />
+					Phone: +353 151515<br /> <i
+						class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right" />
+					Email: contact@easkeysurfschool.ie<br />
+				</div>
+
+				<p>
+					Swing by for a cup of <i class="fa fa-coffee" />, or leave me a
+					note:
+				</p>
+				<form action="/action_page.php" target="_blank">
+
+					<div class="w3-row-padding" style="margin: 0px -16px 8px;">
+
+						<div class="w3-half">
+							<input class="w3-input w3-border" type="text" placeholder="Name"
+								required="" name="Name" />
+						</div>
+
+						<div class="w3-half">
+							<input class="w3-input w3-border" type="text" placeholder="Email"
+								required="" name="Email" />
+						</div>
+					</div>
+					<input class="w3-input w3-border" type="text" placeholder="Message"
+						required="" name="Message" />
+					<button class="w3-button w3-black w3-right w3-section"
+						type="submit">
+						<i class="fa fa-paper-plane" /> SEND MESSAGE
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<footer
+		class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+		<a href="#home" class="w3-button w3-light-grey"><i
+			class="fa fa-arrow-up w3-margin-right" />To the top</a>
+
+		<div class="w3-xlarge w3-section">
+			<i class="fa fa-facebook-official w3-hover-opacity" /> <i
+				class="fa fa-instagram w3-hover-opacity" /> <i
+				class="fa fa-snapchat w3-hover-opacity" /> <i
+				class="fa fa-pinterest-p w3-hover-opacity" /> <i
+				class="fa fa-twitter w3-hover-opacity" /> <i
+				class="fa fa-linkedin w3-hover-opacity" />
+		</div>
+
+		<p>
+			Powered by Team Fantaistic 5 using <a
+				href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS"
+				target="_blank" class="w3-hover-text-green">w3.css</a>
+		</p>
+	</footer>
+</body>
+</html>
