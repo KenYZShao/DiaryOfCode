@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+<title> Intermediate Slots</title>
+<h1>Available Intermediate Slots</h1>
+</h:head>
+<body>
+<h:form>
+<p:messages/>
+<table border="0">
+<tr>
+<td><p:outputLabel for="basic" value="Select Slot Date"/></td>
+<td><p:datePicker id="basic" value="#{intermediateSlotsBean.intermediateSlotDate}" />
+                </td>
+</tr>
+<tr> 
+ <td><p:outputLabel value="Intermediate: " /></td>
+	<td><p:selectOneButton id="intermediate_slot" value="#{intermediateSlotsBean.intermediateSlot}" >
+	<f:selectItem itemValue="9am-12pm" itemLabel="9am-12pm" />
+	<f:selectItem itemValue="2pm-5pm" itemLabel="2pm-5pm" />
+	<f:selectItem itemValue="IntermediateDailyPackage" itemLabel="Daily package" />
+</p:selectOneButton></td>
+</tr>
+<tr>
+<td><p:selectBooleanCheckbox value="#{intermediateSlotsBean.student}" itemLabel="Are you a Student?" /></td>
+</tr>
+
+</table>
+<p>(i) BookSlot will redirect to login page If user not logged in.</p>
+<p:commandButton value="BookSlot" action="#{intermediateSlotsBean.validateIntermediateSlots}" ajax="false"/>
+
+</h:form>
+
+</body>
+</html>

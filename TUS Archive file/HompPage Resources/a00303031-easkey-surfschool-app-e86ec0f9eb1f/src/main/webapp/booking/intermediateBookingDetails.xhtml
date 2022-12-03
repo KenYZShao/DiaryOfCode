@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<head>
+<title>Intermediate slot Success</title>
+</head>
+
+<h:body>
+  <h:form>
+  	<h:outputLabel>Hello #{intermediateSlotsBean.userName}, your selected booking details!!</h:outputLabel>
+  	<br></br>
+  	<table border="1">
+  	<tr><td>Slot Type :</td>
+  	<td>
+  	<h:outputLabel> #{intermediateSlotsBean.slotType} </h:outputLabel>
+  	</td></tr>
+  	<tr><td>Slot Time :</td>
+  	<td>
+  	<h:outputLabel> #{intermediateSlotsBean.intermediateSlot} </h:outputLabel>
+  	</td></tr>
+  	<tr><td>Slot Date:</td>
+  	<td>
+  	<h:outputLabel> #{intermediateSlotsBean.intermediateSlotDate}</h:outputLabel>
+  	</td></tr>
+  	
+  	<br></br>
+  	
+    </table>
+    <p> Please click here to proceed with the payment and confirm the slot booking.</p>
+    <p> Please click here to update/Cancel the Booking</p>
+    </h:form>
+  </h:body>
+  
+</html>

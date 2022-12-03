@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+<title>Novice Slots</title>
+<h1>Available Novice Slots</h1>
+</h:head>
+<body>
+<h:form>
+<p:messages/>
+<table border="0">
+<tr>
+<td><p:outputLabel for="basic" value="Select Slot Date"/></td>
+<td><p:datePicker id="basic" value="#{noviceSlotsBean.noviceSlotDate}" />
+                </td>
+</tr>
+<tr> 
+ <td><p:outputLabel value="Novice: " /></td>
+	<td><p:selectOneButton id="novice_slot" value="#{noviceSlotsBean.noviceSlot}" >
+	<f:selectItem itemLabel="9am-11am" itemValue="9am-11am"  />
+	<f:selectItem itemLabel="12pm-2pm" itemValue="12pm-2pm"  />
+	<f:selectItem itemLabel="3pm-5pm" itemValue="3pm-5pm"  />
+	<f:selectItem itemLabel="Daily package" itemValue="NoviceDailyPackage"  />
+</p:selectOneButton></td>
+</tr>
+<tr>
+<td><p:selectBooleanCheckbox value="#{noviceSlotsBean.student}" itemLabel="Are you a Student?" /></td>
+</tr>
+
+</table>
+<p>(i) BookSlot will redirect to login page If user not logged in.</p>
+<p:commandButton value="BookSlot" action="#{noviceSlotsBean.validateNoviceSlots}" ajax="false"/>
+
+</h:form>
+
+</body>
+</html>

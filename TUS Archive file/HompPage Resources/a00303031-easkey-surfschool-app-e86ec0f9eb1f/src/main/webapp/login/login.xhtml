@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<link rel="shortcut icon" href="resources/images/easkey_icon.JPG"
+		type="image/x-icon" />
+	<title>Login Page</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Inconsolata" />
+	<style type="text/css">
+body, html {
+	height: 100%;
+	font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+	background-position: center;
+	background-size: cover;
+	background-image:
+		url("https://cdn2.picryl.com/photo/2016/06/16/mahia-ocean-waves-unsplash-010819-1024.jpg");
+	min-height: 75%;
+}
+
+.menu {
+	display: none;
+}
+</style>
+</h:head>
+<body>
+	<div class="w3-top">
+
+		<div class="w3-bar" id="myNavbar">
+			<a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+				href="javascript:void(0);" onclick="toggleFunction()"
+				title="Toggle Navigation Menu"> <i class="fa fa-bars" /></a>
+				
+				<a href="HomePage01.xhtml" class="w3-bar-item w3-button">Home</a>
+				<a href="HomePage01.xhtml" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user" /> About</a> 
+				<a href="HomePage01.xhtml" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user" /> Surf Lessons</a> 
+				<a href="HomePage01.xhtml" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th" />Accommodation</a>
+				<a href="HomePage01.xhtml" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope" />Contact </a>
+
+		</div>
+	</div>
+	
+	<div class="w3-content w3-container w3-padding-64" id="login">
+	
+		<img src="resources/images/group.jpg" style="width: 100%; max-width: 1000px; margin-top: 32px;" alt="Login"/>
+
+		
+		<h2><center>Please log in below</center></h2>
+
+	<h:form>
+		<p:messages />
+		<p:outputLabel value="Username: " />
+		<p:inputText value="#{loginBean.userName}" />
+		<p:outputLabel value="Password: " />
+		<p:password value="#{loginBean.password}" />
+		<p:commandButton value="Login" action="#{loginBean.validateUserLogin}"
+			ajax="false" />
+		<p>
+			<a href="ResetPassword.xhtml">Click here to Reset Password</a>
+		</p>
+		<p>
+			<a href="registration.xhtml">Not yet registered? Register now.</a>
+		</p>
+
+	</h:form>
+	
+	</div>
+</body>
+</html>

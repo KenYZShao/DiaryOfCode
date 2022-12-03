@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Easkey Surf School</title>
+	<!-- 	<h:outputStylesheet name="main.css" library="css" /> -->
+</h:head>
+
+<h:body>
+	<div id="page">
+		<div id="header">
+			<h1>Easkey Surfing School</h1>
+		</div>
+		<div id="main">
+			<p>Welcome #{loginBean.userName}</p>
+			<h2>Surfing Packages</h2>
+			<div class="card">
+				<h:form>
+				
+				<a href="../booking/availableNoviceSlots.xhtml">Novice – 6 students to 1 teacher, 2 hour sessions</a><br></br>
+					<a href="../booking/availableIntermediateSlots.xhtml">Intermediate – 3 students to 1 teacher, 3 hour sessions</a><br></br>
+					<a href="../booking/availableAdvancedSlots.xhtml">Advanced  – Individual student teacher sessions</a><br></br>
+					
+					<br />
+					
+				</h:form>
+				<br />
+				<p>
+					<a href="../logout/quit.xhtml">Logout</a> to book lesson a today.
+				</p>
+				<!-- 				<h:commandButton  value="Logout" action="#{correctGuess.myQuitHandler}" /> -->
+			</div>
+		</div>
+
+		<div id="footer">
+			<p class="copyright">&#169;2022 Easkey Surfing School</p>
+		</div>
+	</div>
+</h:body>
+</html>
