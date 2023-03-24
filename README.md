@@ -1,6 +1,6 @@
 # -theDiaryOfCode
 
-This repository contains
+This repository contains:
 
 Codes for practicing C++ and python.
 
