@@ -42,7 +42,7 @@ if(arr[i]!=arr[n-1-i] )
 }
 return true;
 
-tolower(arr[i])!=tolower(arr[n-1-i])
+tolower(arr[i])!=tolower(arr[n-1-i]).
 
 
 
